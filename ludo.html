@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	#rollDice{
+		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -500px;
+ 	}
+ 	#rollDice1{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -370px;
+ 	}
+ 	#rollDice2{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -230px;
+ 	}
+ 	#rollDice3{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score1{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score2{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}#score3{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}#score4{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+
+
+</style>
+<script>
+	//simply show a dice face corresponding to the rolled dice number. It will also work with multiple dice that are laid side by side.
+function dice(diceRoll,diceNumber){
+	console.log("diceImage"+diceNumber)
+	document.getElementById("diceImage"+diceNumber).src=diceRoll+".png"
+}
+/**
+Rolls the dice and totals the number of moves a player is allowed. If the player rolls a six, they will be allowed to roll again.
+If the player rolls three sixes they will have forfieted their turn
+**/
+function rollPlayerDice(diceNumber){
+var totalMoves=0 //how much the player can move in a turn
+var diceRoll =Math.floor(Math.random() * 6) + 1;
+var playerNumber=diceNumber
+totalMoves+=diceRoll
+console.log(diceRoll)
+console.log("The player dice number is "+diceNumber)
+dice(diceRoll,playerNumber)
+console.log("The total the player can move is "+totalMoves)
+if(diceRoll===6){ //the player can roll again
+	console.log("success, you can roll again")
+	diceRoll =Math.floor(Math.random() * 6) + 1;
+	totalMoves+=diceRoll
+    console.log(diceRoll)
+    dice(6,playerNumber) //otherwise the player will not see a six
+    dice(diceRoll,playerNumber)
+    console.log("The total the player can move is "+totalMoves)
+	if(diceRoll===6){
+		console.log("two sixes")
+		diceRoll =Math.floor(Math.random() * 6) + 1;
+		totalMoves+=diceRoll
+    	console.log(diceRoll)
+    	dice(6,playerNumber) //otherwise the player will not see a six
+    	dice(diceRoll,playerNumber)
+    	console.log("The total the player can move is "+totalMoves)
+		diceRoll =Math.floor(Math.random() * 6) + 1;
+		if(diceRoll===6){
+			console.log("three sixes")
+			dice(diceRoll,playerNumber)
+			totalMoves=0
+		}
+	}
+}
+}
+</script>
+</head>
+<body>
+
+<h2>Ludo!</h2>
+<img src="1.png" id="diceImage1"></img>
+<img src="1.png" id="diceImage2"></img>
+<img src="1.png" id="diceImage3"></img>
+<img src="1.png" id="diceImage4"></img>
+
+<button id="rollDice" class="dice" onclick="rollPlayerDice(1)">Roll the dice</button>
+<button id="rollDice1" class="dice" onclick="rollPlayerDice(2)">Roll the dice</button>
+<button id="rollDice2" class="dice" onclick="rollPlayerDice(3)">Roll the dice</button>
+<button id="rollDice3" class="dice" onclick="rollPlayerDice(4)">Roll the dice</button>
+
+<p id="score1"></p>
+<p id="score2"></p>
+<p id="score3"></p>
+<p id="score4"></p>
+
+
+
+</body>
+</html>
