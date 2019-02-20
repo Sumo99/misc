@@ -1,0 +1,119 @@
+	.homes{
+		top:300px;
+	}
+	#green{
+		z-index: 999;
+	}
+	#red{
+		z-index: 999;
+	}
+	#blue{
+		z-index: 999;
+	}
+	#yellow{
+		z-index: 999;	
+	}
+	.home_red{
+		float: left;
+		position:relative;
+		top:100px;
+		border:red solid 3px;
+		width: 250px;
+		height: 250px;
+	}
+	.home_blue{
+ 		position:relative;
+		top:110px;
+		border:blue solid 3px;
+		width: 250px;
+		height: 250px;
+	}
+	.home_green{
+		float:left;
+		left:10px;
+		position:relative;
+		top:100px;
+		border:green solid 3px;
+		width: 250px;
+		height: 250px;
+	}
+	.yellow_home{
+		position: relative;
+		top:-250px;
+	}
+	.home_yellow{
+		position:relative;
+		left:265px;
+		top:365px;
+		border:yellow solid 3px;
+		width: 250px;
+		height: 250px;
+	}
+	#rollDice{
+		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -500px;
+ 	}
+ 	#rollDice1{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -370px;
+ 	}
+ 	#rollDice2{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -230px;
+ 	}
+ 	#rollDice3{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score1{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score2{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score3{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+ 	#score4{
+ 		position: absolute;
+		top:250px !important;
+		float:left;
+		margin-left: -100px;
+ 	}
+
+ 	.gameboard{
+ 		position: absolute;
+ 		top:850px;
+ 		height: 200px;
+ 		width: 860px;
+ 		border:solid 3px ;
+ 	}
+
+ 	.gamedivision{
+ 		float:left;
+ 		top:-100px;
+ 		height: 95px;
+ 		width:80px;
+ 		border:red solid 3px;
+ 	}
+ 	.star{
+ 		position: relative;
+ 		top:20px;
+ 	}
