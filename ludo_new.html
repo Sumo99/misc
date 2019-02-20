@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="ludo.css">
+<script src="ludo.js">
+</script>
+</head>
+<body>
+
+<h2>Ludo!</h2>
+<img src="1.png" id="diceImage1"></img>
+<img src="1.png" id="diceImage2"></img>
+<img src="1.png" id="diceImage3"></img>
+<img src="1.png" id="diceImage4"></img>
+
+<button id="rollDice" class="dice" onclick="rollPlayerDice(1)">Roll the dice</button>
+<button id="rollDice1" class="dice" onclick="rollPlayerDice(2)">Roll the dice</button>
+<button id="rollDice2" class="dice" onclick="rollPlayerDice(3)">Roll the dice</button>
+<button id="rollDice3" class="dice" onclick="rollPlayerDice(4)">Roll the dice</button>
+<img src="red_piece.png" id="red" class="pieces">
+<img src="green_piece.png" id="green" class="pieces">
+<img src="yellow_piece.png" id="yellow" class="pieces">
+<img src="blue_piece.png" id="blue" class="pieces">
+<div class="homes">
+<div class="home_red">
+	<img src="red_piece.png" id="red_home" height="100px"  class="pieces">
+	<img src="red_piece.png" id="red_home" height="100px"  class="pieces">
+	<img src="red_piece.png" id="red_home" height="100px"  class="pieces">
+	<img src="red_piece.png" id="red_home" height="100px"  class="pieces">
+</div>
+<div class="home_green">
+	<img src="green_piece.png" id="green_home" height="100px"  class="pieces">
+	<img src="green_piece.png" id="green_home" height="100px"  class="pieces">
+	<img src="green_piece.png" id="green_home" height="100px"  class="pieces">
+	<img src="green_piece.png" id="green_home" height="100px"  class="pieces">
+</div>
+<div class="home_yellow">
+	<img src="yellow_piece.png" class="yellow_home" height="100px"  class="pieces">
+	<img src="yellow_piece.png" class="yellow_home" height="100px"  class="pieces">
+	<img src="yellow_piece.png" class="yellow_home" height="100px"  class="pieces">
+	<img src="yellow_piece.png" class="yellow_home" height="100px"  class="pieces">
+</div>
+<div class="home_blue">
+	<img src="blue_piece.png" id="blue_home" height="100px"  class="pieces">
+	<img src="blue_piece.png" id="blue_home" height="100px"  class="pieces">
+	<img src="blue_piece.png" id="blue_home" height="100px"  class="pieces">
+	<img src="blue_piece.png" id="blue_home" height="100px"  class="pieces">
+</div>	
+</div>
+<div class="gameboard">
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>	
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision"></div>
+	<div class="gamedivision "><img src="star.png" class="star"></img></div>
+</div>
+
+<p id="score1"></p>
+<p id="score2"></p>
+<p id="score3"></p>
+<p id="score4"></p>
+
+
+
+</body>
+</html>
